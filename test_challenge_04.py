@@ -6,7 +6,20 @@
 # True or False if the variable is a palindrome.
 
 def is_palindrome(var):
-    pass
+    new_var = str(var)
+    len_var = len(new_var)
+    for i in range(0,(len_var-1)):
+        if new_var[i] == new_var[(-(i+1))]:
+            return True
+        else:
+            return False
+
+
+
+
+
+
+
 
 def test_challenge_04_palindrome_number():
     assert is_palindrome(545) == True
