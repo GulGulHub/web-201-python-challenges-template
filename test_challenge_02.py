@@ -6,9 +6,10 @@
 # it should return "112233aa!!".
 
 def duplicate_characters(str):
-    # string comprehension
-    new_string = (letter+letter for letter in str)
-    return "".join(new_string)
+    pass
+    # # string comprehension
+    # new_string = (letter+letter for letter in str)
+    # return "".join(new_string)
 
 
 

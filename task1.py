@@ -62,11 +62,35 @@
 # pres_dict.popitem()
 # # del statement will delete anything with dictionarys = give key it will del both
 
+#
+# def extract_integers(mixed_list):
+#     new_list = (item for item in list if item == int)
+#
+# extract_integers([1, 'apple', 2, 'banana',3, 4]) == [1,2,3,4]
+#
+#
+def is_palindrome(var):
+    new_number = []
+    my_number = var
+    while my_number > 0:
+        num1 = my_number % 10
+        new_number.append(num1)
+        my_number = my_number - num1
+        my_number = my_number / 10
+    print(new_number)
+    for i in range(len(new_number)):
+        print(new_number[-i])
 
-def extract_integers(mixed_list):
-    new_list = (item for item in list if item == int)
 
-extract_integers([1, 'apple', 2, 'banana',3, 4]) == [1,2,3,4]
+is_palindrome(123)
 
-
-
+#
+# rest = int(var / 10)
+# print(rest)
+# num3 = rest % 10
+# print(num3)
+# new_number.append(num3)
+# num4 = int(rest / 10)
+# print(num4)
+# new_number.append(num4)
+# print(new_number)
