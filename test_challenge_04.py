@@ -12,6 +12,9 @@ def calculator(num1, operator, num2):
         result = num1 * num2
     return result
 
+
+
+
 def calculate(instruction):
     solution = 0
     if "*" in instruction:
